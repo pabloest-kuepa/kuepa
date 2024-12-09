@@ -1,3 +1,8 @@
+$color-degradado:linear-gradient(180deg, rgba(9,56,121,1) 0%, rgba(24,204,202,1) 100%);
+$color-fondo:rgb(9,56,121);
+
+
+
 * {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
@@ -8,7 +13,8 @@
   header {
     margin: auto;
     padding: 2%;
-    background-color: #3474e3;
+    background: $color-fondo;
+    background: $color-degradado;
     color: white;
     text-align: center;
   }
@@ -157,3 +163,35 @@
     list-style: none;
   }
   
+  /* Lista de productos */
+
+
+  #productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  }
+#productos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#productos li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
