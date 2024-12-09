@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    margin: auto;
+    padding: 2%;
+    background-color: #3474e3;
+    color: white;
+    text-align: center;
+  }
+  
+  main {
+    background-color: white;
+  }
+  
+  // Font Styles
+  @mixin poppins($weight, $style: normal) {
+    font-family: "Poppins", sans-serif;
+    font-weight: $weight;
+    font-style: $style;
+  }
+  
+  .poppins-thin {
+    @include poppins(100);
+  }
+  
+  .poppins-extralight {
+    @include poppins(200);
+  }
+  
+  .poppins-light {
+    @include poppins(300);
+  }
+  
+  .poppins-regular {
+    @include poppins(400);
+  }
+  
+  .poppins-medium {
+    @include poppins(500);
+  }
+  
+  .poppins-semibold {
+    @include poppins(600);
+  }
+  
+  .poppins-bold {
+    @include poppins(700);
+  }
+  
+  .poppins-extrabold {
+    @include poppins(800);
+  }
+  
+  .poppins-black {
+    @include poppins(900);
+  }
+  
+  .poppins-thin-italic {
+    @include poppins(100, italic);
+  }
+  
+  .poppins-extralight-italic {
+    @include poppins(200, italic);
+  }
+  
+  .poppins-light-italic {
+    @include poppins(300, italic);
+  }
+  
+  .poppins-regular-italic {
+    @include poppins(400, italic);
+  }
+  
+  .poppins-medium-italic {
+    @include poppins(500, italic);
+  }
+  
+  .poppins-semibold-italic {
+    @include poppins(600, italic);
+  }
+  
+  .poppins-bold-italic {
+    @include poppins(700, italic);
+  }
+  
+  .poppins-extrabold-italic {
+    @include poppins(800, italic);
+  }
+  
+  .poppins-black-italic {
+    @include poppins(900, italic);
+  }
+  
+  // Navbar
+  .navmenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+  
+    a {
+      margin: 1.5rem;
+    }
+  }
+  
+  .navbar {
+    background-color: white;
+    filter: drop-shadow(1px 1px 1px #000000);
+  }
+  
+  a {
+    text-decoration: none;
+    color: #323232;
+  }
+  
+  // Servicios
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  
+    h3 {
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .contenedor-servicios {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    &-lista {
+      font-weight: bold;
+    }
+  
+    &-card {
+      background-color: white;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      border-radius: 8px;
+      padding: 1.5rem;
+      min-width: 300px;
+      max-width: 350px;
+    }
+  }
+  
+  li {
+    list-style: none;
+  }
+  
